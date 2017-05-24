@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+### 1.35 - 2017-07-05
+
+* Deprecated
+    * The `throttleRequest` parameter for `TerrainProvider.requestTileGeometry`, `CesiumTerrainProvider.requestTileGeometry`, `VRTheWorldTerrainProvider.requestTileGeometry`, and `EllipsoidTerrainProvider.requestTileGeometry` is deprecated and will be replaced with an optional `Request` object. To throttle requests set the request's `throttle` property to `true`.
+    * The `options.url` parameter for `loadWithXhr` accept, `loadArrayBuffer`, `loadBlob`, `loadImageViaBlob`, `loadText`, `loadJson`, `loadXML`, `loadImage`, `loadCRN`, `loadKTX`, `loadCubeMap`
+
 ### 1.34 - 2017-06-01
 
 * Breaking changes
